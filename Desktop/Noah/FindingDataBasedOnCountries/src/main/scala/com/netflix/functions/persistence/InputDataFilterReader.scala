@@ -17,6 +17,10 @@ object InputDataFilterReader {
 
     //println(data.getClass)
     import spark.implicits._
+
+    data.toDF.printSchema()
+    data.toDF.show
+
     data.toDF
   }
 }
