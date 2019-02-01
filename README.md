@@ -19,3 +19,11 @@ Note :
    
 2) Cassandra internally changes all the keyspace/table/columnname to lower case, make sure when you are working on the
    dataframes, you give the proper names.
+   
+3) when you are wrting data into Cassandra table, the data has to be in RDD not in DataFrame. If you convert RDD to DF and 
+   back & forth, you might get error writing into cassandra table using "saveToCassandra". So that is why I have added these
+   
+     implicit val rowWriter : RowWriterFactory[Row] = SqlRowWriter.Factory
+     
+   if you have this in your code, even if you have converted your DF to RDD, you would not be getting any error, because scala
+   takes care of the conversion implicitely.
