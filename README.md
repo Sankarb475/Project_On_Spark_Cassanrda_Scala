@@ -8,7 +8,9 @@ brief details about the project ::
 imported a text datafile into spark dataframe and on that have done some aggregation and manipulation, which finally 
 have written into Cassandra tables. All these using Scala language.
 
---make sure to modify your pom.xml file
+--make sure to modify your pom.xml file.
+
+--there are input parameters you need to have to provide, like the path to the downloaded adult.data file in your local.
 
 Details of the project ::
 
