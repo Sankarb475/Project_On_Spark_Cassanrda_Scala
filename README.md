@@ -8,7 +8,7 @@ brief details about the project ::
 imported a text datafile into spark dataframe and on that have done some aggregation and manipulation, which finally 
 have written into Cassandra tables. All these using Scala language.
 
-
+--make sure to modify your pom.xml file
 
 Details of the project ::
 
